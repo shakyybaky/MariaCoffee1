@@ -1,0 +1,87 @@
+.customer-order-container {
+  max-width: 100vw;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: "circe", Arial, sans-serif;
+  overflow-x: auto;
+}
+
+.customer-order-title {
+  color: #433628;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
+.customer-order-empty {
+  color: #433628;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.customer-order-list-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.customer-order-card {
+  min-width: 320px;
+  max-width: 340px;
+  border: 1px solid #DED4CC;
+  border-radius: 16px;
+  padding: 24px 20px 20px 20px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(67,54,40,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.customer-order-details ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  color: #433628;
+  font-size: 1rem;
+}
+
+.customer-order-details strong {
+  color: #433628;
+}
+
+.customer-order-total {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #433628;
+  font-size: 1.1rem;
+}
+
+.customer-order-date {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #888;
+}
+
+.customer-order-cancel-btn {
+  align-self: flex-end;
+  background: #b00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.customer-order-cancel-btn:hover {
+  background: #a00;
+}

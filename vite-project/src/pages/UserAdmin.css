@@ -1,0 +1,358 @@
+.admin-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100vw;
+  min-height: 100vh;
+  background: #f7f5f2;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar styles */
+.admin-sidebar {
+  width: 240px;
+  background: #433628;
+  color: #ded4cc;
+  min-height: 100vh;
+  padding: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 16px 0 rgba(67, 54, 40, 0.13);
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  z-index: 10;
+}
+
+.sidebar-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sidebar-logo img {
+  width: 120px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(90%) sepia(7%) saturate(400%) hue-rotate(340deg) brightness(110%) contrast(90%);
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #ded4cc;
+  text-align: left;
+  width: 100%;
+  font-family: 'Circe', Arial, sans-serif;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  margin: 0;
+  text-align: left;
+}
+
+.sidebar-menu li {
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 0;
+  color: #ded4cc;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a:focus {
+  background: #5a4636;
+  color: #fff;
+}
+
+.admin-main-content {
+  flex: 1;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f5f2;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.admin-title {
+  font-family: 'Circe', Arial, sans-serif;
+  font-size: 40px;
+  color: #433628;
+  font-weight: 800;
+  margin: 0;
+  text-align: left;
+}
+
+.admin-add-btn {
+  background: #433628;
+  color: #ded4cc;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-add-btn:hover,
+.admin-add-btn:focus {
+  background: #5a4636;
+  color: #fff;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Circe', Arial, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 16px 0 rgba(67, 54, 40, 0.13), 0 1.5px 6px 0 rgba(67, 54, 40, 0.10);
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ded4cc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.admin-table th {
+  background: #433628;
+  color: #ded4cc;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.admin-table tr:hover {
+  background: #f3ede7;
+}
+
+.admin-product-img {
+  border: 2px solid #ded4cc;
+  background: #fff;
+  padding: 2px;
+  border-radius: 6px;
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Style for MUI Checkbox and IconButton to match #433628 */
+.MuiCheckbox-root {
+  color: #433628 !important;
+}
+.MuiCheckbox-root.Mui-checked {
+  color: #433628 !important;
+}
+
+.MuiIconButton-root {
+  color: #433628 !important;
+}
+
+/* Specific color for delete icon */
+.MuiIconButton-root[aria-label="delete"] {
+  color: #b71c1c !important; /* dark red for delete */
+}
+
+/* Specific color for edit icon */
+.MuiIconButton-root[aria-label="edit"] {
+  color: #433628 !important;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .admin-sidebar {
+    display: none;
+  }
+  .admin-container {
+    padding: 0;
+  }
+  .admin-main-content {
+    padding: 16px 4px;
+  }
+  .admin-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .admin-title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .admin-add-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .admin-table {
+    font-size: 13px;
+  }
+}
+
+/* --- Modal Form Fields --- */
+.MuiDialogTitle-root {
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  color: #433628;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.MuiDialogContent-root label,
+.MuiDialogContent-root span {
+  font-family: 'Circe', Arial, sans-serif;
+  color: #433628;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.MuiInputBase-root,
+.MuiInputLabel-root,
+.MuiSelect-root,
+.MuiMenuItem-root {
+  font-family: 'Circe', Arial, sans-serif !important;
+  font-size: 16px !important;
+  color: #433628 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  background: #f7f5f2 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ded4cc !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #433628 !important;
+}
+
+.MuiSelect-root,
+.MuiSelect-select {
+  background: #fff !important;
+}
+
+.MuiMenuItem-root.Mui-selected,
+.MuiMenuItem-root.Mui-selected:hover {
+  background: #ded4cc !important;
+  color: #433628 !important;
+}
+
+.MuiCheckbox-root {
+  color: #433628 !important;
+}
+
+.MuiButton-containedPrimary {
+  background: #433628 !important;
+  color: #ded4cc !important;
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 800;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.MuiButton-containedPrimary:hover,
+.MuiButton-containedPrimary:focus {
+  background: #5a4636 !important;
+  color: #fff !important;
+}
+
+input[type="file"] {
+  font-family: 'Circe', Arial, sans-serif;
+  color: #433628;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 0;
+  margin-bottom: 8px;
+}
+
+img[alt="Preview"] {
+  border: 2px solid #ded4cc;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px 0 rgba(67, 54, 40, 0.10);
+}
+
+.MuiDialogTitle-root {
+  font-family: 'Circe', Arial, sans-serif;
+  font-weight: 1000;
+  color: #433628;
+  font-size: 28px !important; /* Adjusted size */  
+  letter-spacing: 1px;
+}
+
+/* Style the Cancel button in the modal */
+.MuiDialogActions-root .MuiButton-text {
+  color: #b71c1c !important; /* Dark red for cancel */
+  font-weight: 700;
+  font-family: 'Circe', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+/* --- Responsive Modal --- */
+@media (max-width: 600px) {
+  .MuiDialog-paper {
+    margin: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .MuiDialogTitle-root {
+    font-size: 20px;
+  }
+  .MuiDialogContent-root label,
+  .MuiDialogContent-root span {
+    font-size: 14px;
+  }
+}

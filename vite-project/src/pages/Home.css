@@ -1,0 +1,202 @@
+
+
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.banner-bg {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.home-buttons {
+  position: absolute;
+  top: 60%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 40px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 14px 38px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-primary {
+  background: #433628;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #bbb2ac;
+  text-decoration: none;
+  color: #433628;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #433628;
+  border: 2px solid #433628;
+}
+
+.btn-outline:hover {
+  color: #433628;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 1000 !important;
+  margin-top: 20px;
+  font-family: "circe", Arial, sans-serif;
+}
+
+.section-description {
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-family: "circe", Arial, sans-serif;
+  color: #433628;
+}
+
+.about-maria-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.about-maria-img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(67,54,40,0.12);
+}
+
+.about-maria-text {
+  max-width: 500px;
+  top: 60PX;
+}
+.about-maria-section {
+  background: #faf9f7;
+  padding: 40px 0;
+}
+
+.find-us-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 1000 !important;
+  margin-top: 20px;
+  font-family: "circe", Arial, sans-serif;
+}
+.find-us-section {
+  background: #faf9f7;
+  padding: 30px 0;
+}
+.find-us-detail-block {
+  margin-bottom: 8px;
+}
+
+.find-us-map {
+  min-width: 400px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.find-us-iframe {
+  border: 0;
+  border-radius: 8px;
+  width: 1130px;
+  height: 360px;
+  box-shadow: 0 10px 30px rgba(67,54,40,0.12);
+}
+.menu-maria-section {
+  background: #ded4cc;
+  padding: 50px 0;
+}
+
+.menu-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 1000 !important;
+  margin-top: 20px;
+  font-family: "circe", Arial, sans-serif;
+}
+/* Center the menu button */
+.menu-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btn-primary {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: #433628;
+  color: #fff;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn-primary:hover:hover {
+  background: #bbb2ac;
+  text-decoration: none;
+  color: #433628;
+  scale: 1.05;
+}
+
+/* Find Us Section */
+.find-us-desc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.find-us-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.find-us-details {
+  min-width: 250px;
+  max-width: 350px;
+  font-size: 1.1rem;
+  color: #433628;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(67,54,40,0.08);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* The rest of your existing CSS remains unchanged */
